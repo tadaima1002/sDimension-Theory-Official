@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1149524619.svg)](https://doi.org/10.5281/zenodo.18646643)
 # sDimension Theory: Information Phase Transition in Neural Networks
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
