@@ -1,8 +1,8 @@
-[![DOI](https://zenodo.org/badge/1149524619.svg)](https://doi.org/10.5281/zenodo.18646643)
-# sDimension Theory: Information Phase Transition in Neural Networks
 
+# sDimension Theory: Information Phase Transition in Neural Networks
+[![DOI](https://zenodo.org/badge/1149524619.svg)](https://doi.org/10.5281/zenodo.18646643)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-Pending-orange)](https://zenodo.org)
+
 
 > **Discovery of Critical Threshold α ≈ 0.3 with p < 4.72×10⁻¹⁹⁸ Statistical Significance**
 
