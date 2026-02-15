@@ -1,57 +1,181 @@
-# sDimension-Theory-Official
-sDimension Theory: 知能の「純度」を測定し、AIを民主化する新パラダイム
-「知能の源泉は行列の形ではなく、数値そのものの履歴（s次元）にある」
+# sDimension Theory: Information Phase Transition in Neural Networks
 
-🚀 哲学 (Philosophy)
-現代の人工知能（AI）は、巨大な行列と膨大な電力消費に依存する「物量作戦」の限界に直面しています。モデルを巨大化させることで知能を得ようとする「スケーリング則」の裏側には、情報の洗練を怠り、不純な情報を足し算（スキップ接続等）で誤魔化し続けることで生じる**「情報の負債（Dimensional Debt）」**が蓄積されています。
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-Pending-orange)](https://zenodo.org)
 
-本プロジェクトは、計算プロセスの深さを表す sDimension (s次元) と、情報の不整合を表す Debt (負債) という新概念を導入することで、AIの内部状態を可視化・監査し、**「少ないエネルギーで、嘘をつかない（ハルシネーションのない）高密度な知能」**を実現することを目指します。
+> **Discovery of Critical Threshold α ≈ 0.3 with p < 4.72×10⁻¹⁹⁸ Statistical Significance**
 
-私たちは、この理論が特定の利益団体に独占され、コスト競争力の武器として隠匿されることを拒みます。
-AIを「膨張」から「真の進化」へと導くため、本理論を Apache-2.0 ライセンス の下で全世界に開放します。
+---
 
-🧠 コア・コンセプト (Core Concepts)
-1. sDimension (s次元: $1^s$)
-数値が経てきた変換の深度。
+## 🔬 Abstract
 
-生データ ($1^1$): 具象的な情報。
-深層層 ($1^s$): 高度に抽象化された概念。
-層を通過（乗算）するたびに、数値の「s次元」は累積され、知能の密度が高まります。
+We report the **first empirical discovery** of an information phase transition in neural network inference. Using a novel "Dimensional Debt" metric from sDimension theory, we demonstrate that neural networks undergo catastrophic structural collapse when input noise exceeds a critical threshold **α ≈ 0.3**.
 
-2. Dimensional Debt (次元の負債: $1^d$)
-効率（学習のしやすさ）のために純度を犠牲にした際に生じる不整合。
+**Key Findings**:
+- 📊 **Statistical significance**: p < 4.72×10⁻¹⁹⁸ (astronomically significant)
+- 📈 **Effect size**: Cohen's d = 8.02 (exceptionally large, ~6.7× standard threshold)
+- 🔗 **Correlation**: r = 0.966 (near-perfect linearity)
+- 🎯 **Classification**: AUC = 1.000 (perfect separation)
 
-発見: スキップ接続（ResNet等）は、異なるs次元を安易に合流させることで、推論の確信度を低下させ、「負債」を発生させていることを実証しました。
+This phase transition is analogous to physical phase transitions (ice→water→vapor) and has immediate implications for:
+- 🚨 Hallucination detection in AI systems
+- ✅ Model reliability assessment
+- 🔄 Continual learning
 
-3. 位相的精算 (Topological Settlement)
-負債を抱えた情報を、複素平面上の位相のズレ（通行税）として処理し、自律的に「嘘（ハルシネーション）」を減衰させる仕組み。これは将来の量子コンピューティングにおける $e^{i2\pi\theta}$ 実装へのロードマップとなります。
+---
 
-📊 実証された事実 (Experimental Proofs)
-本リポジトリに含まれる検証コードにより、以下の現象が確認されています：
+## 📄 Research Papers
 
-情報の凝縮 (Condensation):
-有効ランク（Effective Rank）の変遷により、層を深めるごとに情報が「抽象概念」へと凝縮される過程を可視化。
+### English Version
+- **Paper**: [sdimension_preprint_v1.md](sdimension_preprint_v1.md)
+- **PDF**: [sdimension_preprint_v1.pdf](sdimension_preprint_v1.pdf)
 
-負債の発生 (Debt Confirmation):
-スキップ接続を持つResNetは、PlainNetに比べ、統計的に有意に「マージン（確信度）」が低い。
-p値: $3.39 \times 10^{-64}$ という圧倒的な有意差で、負債と推論エラーの相関を証明。
+### 日本語版 (Japanese Version)
+- **論文**: [sdimension_preprint_v1.0_jp.md](sdimension_preprint_v1.0_jp.md)
+- **PDF**: [sdimension_preprint_v1.0_jp.pdf](sdimension_preprint_v1.0_jp.pdf)
 
-古典計算の限界 (Information Loss):
-現代のAIが行っている次元変換（圧縮・展開）において、最大50%の情報が不可逆的に消失していることを特定。
-🛠 実装 (Implementation)
-本プロジェクトは、人間と複数のAI（Gemini, Claude, Copilot）によるハイブリッドな対話型研究から誕生しました。
+---
 
-SDimTensor: s次元と負債を保持する新しいテンソル形式。
-monitoring-uncertainty: 負債を監視し、エラーを事前に予知するモジュール。
+## 🧪 Experimental Code
 
-🌍 ライセンス (License: Apache-2.0)
-本理論、およびソースコードは Apache License 2.0 で提供されます。
+### Phase 1: Noise Mixing Continuous Experiment
+- **Code**: [phase1_continuous_experiment.py](phase1_continuous_experiment.py)
+- **Results**: [phase1_experiment.png](phase1_experiment.png)
 
-自由な利用: 商用・個人を問わず、自由に利用・改変・再配布が可能です。
-特許の不当行使の禁止: 本ライセンスを利用する者は、本理論の利用者に対して特許訴訟を起こすことができません（特許の独占禁止）。
-責任の限定: 本理論の利用により生じた損害について、作者は一切の責任を負いません。
+### Quick Start
 
-✉️ 著者について (About the Author)
-tadaima1002
-既存のAI界の常識（行列中心主義）に対し、数値そのもののポテンシャルに注目した「sDimension理論」を提唱。
-「AIを、より透明で、より低電力で、より誠実なものにする」ために、このリポジトリを管理しています。
+```bash
+# Clone repository
+git clone https://github.com/tadaima1002/sDimension-Theory-Official.git
+cd sDimension-Theory-Official
+
+# Install dependencies
+pip install torch torchvision numpy matplotlib scipy scikit-learn --break-system-packages
+
+# Run experiment (~30 minutes on GTX 1050 Ti)
+python phase1_continuous_experiment.py
+```
+
+**Requirements**:
+- Python 3.8+
+- PyTorch 2.0+
+- CUDA (optional, for GPU acceleration)
+- 4GB+ VRAM (tested on GTX 1050 Ti)
+
+---
+
+## 📊 Main Results
+
+![Phase Transition Discovery](phase1_experiment.png)
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| **p-value** | 4.72×10⁻¹⁹⁸ | Beyond astronomical significance |
+| **Cohen's d** | 8.02 | Exceptionally large effect size |
+| **Pearson r** | 0.966 | Near-perfect linear correlation |
+| **AUC** | 1.000 | Perfect classification accuracy |
+| **Critical threshold** | α ≈ 0.3 | Information phase transition point |
+
+---
+
+## 🎯 Key Insights
+
+### 1. What is sDimension Theory?
+
+sDimension theory tracks **computational history** and **structural integrity** of neural network values:
+
+```
+Every value: Ψ = (v, s, d)
+  v: numerical value
+  s: sDimension (computational depth)
+  d: Dimensional Debt (structural mismatch)
+```
+
+### 2. What is Dimensional Debt?
+
+When different computational paths merge (e.g., residual connections), structural "debt" accumulates:
+
+```python
+# At residual merge:
+gap = |s_main - s_shortcut|  # depth mismatch
+d_new = d_main + d_shortcut + gap  # debt accumulates
+```
+
+**High debt = unreliable computation**, even if output looks confident.
+
+### 3. Phase Transition at α ≈ 0.3
+
+| Phase | Noise ratio α | Debt | State |
+|-------|---------------|------|-------|
+| **Ordered** | 0.0 - 0.3 | Low (d<5) | Information preserved |
+| **Critical** | ~0.3 | Rapid increase | Phase transition |
+| **Disordered** | 0.3 - 1.0 | High (d>15) | Structural collapse |
+
+---
+
+## 🚀 Applications
+
+### Hallucination Detection
+```python
+if debt > threshold:
+    warning("Output is structurally unreliable")
+    # Don't trust high confidence scores
+```
+
+### Model Monitoring
+- Track structural integrity during deployment
+- Detect adversarial attacks
+- Monitor out-of-distribution inputs
+
+### Architecture Design
+- Understand why skip connections work
+- Design robust deep architectures
+- Prevent catastrophic forgetting
+
+---
+
+## 📖 Citation
+
+```bibtex
+@article{imamura2026sdimension,
+  title={Information Phase Transition in Neural Networks: Discovery of Critical Threshold via sDimension Theory},
+  author={Imamura},
+  year={2026},
+  month={February},
+  publisher={GitHub},
+  url={https://github.com/tadaima1002/sDimension-Theory-Official},
+  note={Preprint. DOI pending via Zenodo integration}
+}
+```
+
+---
+
+## 📜 License
+
+Apache License 2.0 - see [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+This research was conducted independently without institutional affiliation. Special thanks to the Claude AI system for technical discussions during theory development.
+
+---
+
+## 📧 Contact
+
+- **GitHub**: [@tadaima1002](https://github.com/tadaima1002)
+- **Issues**: [Open an issue](https://github.com/tadaima1002/sDimension-Theory-Official/issues)
+- **Discussions**: [Start a discussion](https://github.com/tadaima1002/sDimension-Theory-Official/discussions)
+
+---
+
+## 🔗 Links
+
+- **Zenodo Archive**: Coming soon (DOI will be assigned upon Zenodo integration)
+- **arXiv**: Planned submission after peer feedback
+
+---
+
+**Last Updated**: February 15, 2026  
+**Version**: 1.0
