@@ -1,0 +1,27 @@
+{
+  "title": "sDimension Theory: Paper 2 - Catastrophic Forgetting Mechanism",
+  "description": "Code and data for Paper 2: Visualizing the mechanism of catastrophic forgetting through s-dimension theory. See /paper2-catastrophic-forgetting/ folder.",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "catastrophic forgetting",
+    "continual learning",
+    "s-dimension theory",
+    "structural debt",
+    "neural networks"
+  ],
+  "creators": [
+    {
+      "name": "Imamura",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isNewVersionOf",
+      "identifier": "10.5281/zenodo.XXXXXXX1"
+    }
+  ]
+}
